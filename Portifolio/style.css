@@ -1,0 +1,137 @@
+/* Importação de fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Estilos gerais */
+:root {
+    --cor-principal-clara: #F8E8E2; /* Um bege claro para o fundo */
+    --cor-principal-escura: #D4B6A6; /* Um bege um pouco mais escuro para o cabeçalho superior */
+    --cor-secundaria: #A52A2A;    /* Um vermelho mais fechado/marrom avermelhado para detalhes */
+    --cor-texto-principal: #333;
+    --cor-texto-claro: #fff;
+    --sombra: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: var(--cor-principal-clara); /* Fundo geral bege claro */
+    color: var(--cor-texto-principal);
+}
+
+.top-bar {
+    background: var(--cor-principal-escura); /* Cabeçalho superior bege escuro */
+    color: var(--cor-texto-claro);
+    padding: 0.5rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+header {
+    background: var(--cor-secundaria); /* Menu de navegação em vermelho */
+    padding: 0.5rem 0;
+    box-shadow: var(--sombra);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--cor-texto-claro); /* Links do menu em branco */
+    font-weight: bold;
+    padding: 0.8rem 1.2rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Fundo sutil ao passar o mouse */
+    border-radius: 4px;
+}
+
+main {
+    padding: 2rem;
+    max-width: 960px; /* Tamanho ajustado para o layout das suas imagens */
+    margin: auto;
+}
+
+.secao {
+    background: var(--cor-texto-claro); /* Fundo das seções em branco, como nas suas imagens */
+    padding: 1.5rem 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--sombra);
+}
+
+h2 {
+    color: var(--cor-secundaria); /* Títulos das seções em vermelho */
+    margin-top: 0;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--cor-principal-clara); /* Linha sutil para separar */
+    padding-bottom: 0.5rem;
+}
+
+/* Estilos específicos para a seção Habilidades */
+.habilidade-item {
+    background-color: var(--cor-principal-clara); /* Fundo bege claro para os itens de habilidade */
+    padding: 0.8rem 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid var(--cor-principal-escura); /* Borda sutil bege escuro */
+}
+
+/* Estilos para os cards de projeto */
+.projeto-card {
+    background-color: var(--cor-principal-clara); /* Fundo bege claro para os cards */
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    border: 1px solid var(--cor-principal-escura);
+    display: flex; /* Para alinhar o texto e o botão */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projeto-card h3 {
+    margin: 0;
+    color: var(--cor-secundaria);
+    font-size: 1.1rem;
+}
+
+.projeto-card p {
+    margin: 0.2rem 0 0;
+    flex-grow: 1; /* Permite que a descrição ocupe o espaço */
+    margin-left: 1rem;
+}
+
+.btn-github {
+    background-color: var(--cor-secundaria); /* Botão em vermelho */
+    color: var(--cor-texto-claro);
+    padding: 0.6rem 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    white-space: nowrap; /* Evita que o texto do botão quebre */
+}
+
+.btn-github:hover {
+    filter: brightness(85%); /* O código corrigido para escurecer o botão */
+}
+
+/* Estilos para o rodapé */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--cor-secundaria); /* Rodapé em vermelho */
+    color: var(--cor-texto-claro);
+    margin-top: 2rem;
+}
